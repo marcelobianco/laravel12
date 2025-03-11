@@ -3,15 +3,16 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/about', function () {
     return view('about');
 });
 
-
-// Criar uma rota chamada contact e retornar uma view chamada contact
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 /*
     GET = Index = Traz informações
